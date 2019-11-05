@@ -23,16 +23,11 @@ public class TrabArduino {
         put(25.8,3.0);
     }};
 
-    GeradorDataset geradorDeGrafico = new GeradorDataset();
+    GeradorDataset geradorDataset = new GeradorDataset();    
+    GeradorGrafico geradorGrafico = new GeradorGrafico();
     
-    DefaultCategoryDataset dataSet = geradorDeGrafico.gerar("Teste", dadosTeste);
-    
-    JFreeChart grafico = ChartFactory.createLineChart("Meu Grafico", "Ponto de Exemplo", 
-    "Valor", dataSet, PlotOrientation.VERTICAL, true, true, false);
-
-    ChartFrame frame = new ChartFrame("Primeiro Grafico", grafico);
-    frame.pack();
-    frame.setVisible(true);    
+    geradorGrafico.gerarGrafico("Meu Grafico", "Primeiro Grafico", "Ponto de exemplo", "Valor",
+            geradorDataset.gerar("Teste", dadosTeste));
     
     }
 }
