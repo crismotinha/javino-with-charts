@@ -22,4 +22,18 @@ class GeradorDataset {
         });
         return data;
     };
+    
+    public DefaultCategoryDataset gerarDatasetDuplo(String serie1, HashMap<Double, Double> valores1, String serie2, 
+            HashMap<Double, Double> valores2) {
+        DefaultCategoryDataset data = new DefaultCategoryDataset();
+        
+        valores1.entrySet().forEach((parDeValores) -> {
+            data.addValue(parDeValores.getKey(), serie1, parDeValores.getValue());
+        });
+        
+        valores2.entrySet().forEach((parDeValores) -> {
+            data.addValue(parDeValores.getKey(), serie2, parDeValores.getValue());
+        });
+        return data;
+    };
 }
