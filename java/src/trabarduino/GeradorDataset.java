@@ -14,25 +14,16 @@ import org.jfree.data.category.DefaultCategoryDataset;
  * @author cris
  */
 class GeradorDataset {
-    public DefaultCategoryDataset gerar(String serie, HashMap<Double, Double> valores) {
-        DefaultCategoryDataset data = new DefaultCategoryDataset();
-        
-        valores.entrySet().forEach((parDeValores) -> {
-            data.addValue(parDeValores.getKey(), serie, parDeValores.getValue());
-        });
-        return data;
-    };
-    
     public DefaultCategoryDataset gerarDatasetDuplo(String serie1, HashMap<Double, Double> valores1, String serie2, 
             HashMap<Double, Double> valores2) {
         DefaultCategoryDataset data = new DefaultCategoryDataset();
         
         valores1.entrySet().forEach((parDeValores) -> {
-            data.addValue(parDeValores.getKey(), serie1, parDeValores.getValue());
+            data.addValue(parDeValores.getValue(), serie1, parDeValores.getKey() );
         });
         
         valores2.entrySet().forEach((parDeValores) -> {
-            data.addValue(parDeValores.getKey(), serie2, parDeValores.getValue());
+            data.addValue(parDeValores.getValue(), serie2, parDeValores.getKey());
         });
         return data;
     };
