@@ -50,6 +50,10 @@ A placa que usamos estava montada da seguinte forma:
 5. Abra o projeto java no NetBeans, o mesmo que abrimos anteriormente e instalamos o jfreechart e o Javino
 6. Compile e rode o projeto :)
 
+### Resultados
 
+O programa está configurado para pegar 100 pontos em sequência. Abaixo temos um gráfico gerado usando o programa. A linha vermelha indica a temperatura, e a azul a luminosidade. É possível observar os momentos que tampamos o sensor de luminosidade, e os momentos que apontamos uma lanterna para ele :))
+
+![Grafico gerado](./imagens/grafico.jpg)
 
 Projeto feito com muito amor e carinho por @crismotinha, @leticiavna e @yuletrannin :hearts:
