@@ -49,3 +49,7 @@ A placa que usamos estava montada da seguinte forma:
 4. Rode o projeto (no botão :arrow_right:)
 5. Abra o projeto java no NetBeans, o mesmo que abrimos anteriormente e instalamos o jfreechart e o Javino
 6. Compile e rode o projeto :)
+
+
+
+Projeto feito com muito amor e carinho por @crismotinha, @leticiavna e @yuletrannin :hearts:
