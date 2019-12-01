@@ -4,7 +4,11 @@
 
 ### Instalações
 
-Primeiramente, clone o repositório.
+Primeiramente, clone o repositório. Depois, siga os passos abaixo:
+
+*Instalando o Java*
+1. Baixe o Java a partir de https://www.java.com/pt_BR/download/
+2. Siga as instruções de instalação para o seu sistema operacional
 
 *Instalando o jfreechart*
 
